@@ -150,7 +150,3 @@
    Host: 0.0.0.0
    Port: 8080
    Backend: 127.0.0.1
-
-14. License
-
-   This project is intended for research and educational purposes only.
