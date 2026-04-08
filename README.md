@@ -24,40 +24,41 @@
    If benign → forward request to backend server
 
 3. Features
+   
    3.1 Statistical Features
       
-   Request length
-   Shannon entropy
-   Chunk-based entropy
-   Ratio of special characters
-   Digit ratio
-   Indicators for SQLi, XSS, and path traversal
+      Request length
+      Shannon entropy
+      Chunk-based entropy
+      Ratio of special characters
+      Digit ratio
+      Indicators for SQLi, XSS, and path traversal
 
-3.2 Advanced Security Features
+   3.2 Advanced Security Features
 
-   SQL keyword frequency and ratio
-   XSS pattern detection
-   Command injection indicators
-   Logical injection patterns (e.g., 1=1, true)
-   Obfuscation detection:
-   URL encoding
-   Hex encoding
-   Unicode encoding
-   Base64-like patterns
-   Mixed-case obfuscation
+      SQL keyword frequency and ratio
+      XSS pattern detection
+      Command injection indicators
+      Logical injection patterns (e.g., 1=1, true)
+      Obfuscation detection:
+      URL encoding
+      Hex encoding
+      Unicode encoding
+      Base64-like patterns
+      Mixed-case obfuscation
 
 3.3 Header Anomaly Features
 
-   Missing User-Agent or Referer
-   Suspicious scanning tools (e.g., sqlmap, nikto)
-   Abnormally long tokens
-   Excessive query parameters
-   Unusual HTTP methods (PUT, DELETE, TRACE, CONNECT)
+      Missing User-Agent or Referer
+      Suspicious scanning tools (e.g., sqlmap, nikto)
+      Abnormally long tokens
+      Excessive query parameters
+      Unusual HTTP methods (PUT, DELETE, TRACE, CONNECT)
 
 4. Data Preprocessing
 
    The preprocessing pipeline includes:
-   
+      
    URL decoding and HTML entity decoding
    Removal of non-printable characters
    Lowercasing normalization
@@ -152,14 +153,14 @@
 
 10. Project Structure
 
-   /models
-       final_model.pkl
-   /src
-       app.py
-   /logs
-       waf_logs.txt
-   README.md
-   requirements.txt
+      /models
+          final_model.pkl
+      /src
+          app.py
+      /logs
+          waf_logs.txt
+      README.md
+      requirements.txt
 
 12. Advantages
 
@@ -170,6 +171,7 @@
    Easily extensible for additional attack patterns
 
 12. Limitations
+    
    Threshold-based detection may require tuning
    Potential false positives in edge cases
    Does not model temporal request sequences
