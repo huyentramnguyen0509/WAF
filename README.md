@@ -151,39 +151,6 @@
    Port: 8080
    Backend: 127.0.0.1
 
-10. Project Structure
-
-      /models
-          final_model.pkl
-      /src
-          app.py
-      /logs
-          waf_logs.txt
-      README.md
-      requirements.txt
-
-12. Advantages
-
-   Real-time detection using machine learning
-   No dependency on signature-based rules
-   Privacy-preserving (no payload decryption required)
-   Modular feature engineering pipeline
-   Easily extensible for additional attack patterns
-
-12. Limitations
-    
-   Threshold-based detection may require tuning
-   Potential false positives in edge cases
-   Does not model temporal request sequences
-   Dependent on feature engineering quality
-
-13. Future Work
-   Integration with deep learning models (LSTM, GRU)
-   Adaptive threshold tuning
-   Real-time streaming and distributed deployment
-   Explainable AI (feature importance analysis)
-   Integration with SIEM systems
-
 14. License
 
    This project is intended for research and educational purposes only.
