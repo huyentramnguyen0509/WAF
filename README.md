@@ -25,6 +25,7 @@ If benign → forward request to backend server
 
 3. Features
 3.1 Statistical Features
+   
 Request length
 Shannon entropy
 Chunk-based entropy
@@ -33,6 +34,7 @@ Digit ratio
 Indicators for SQLi, XSS, and path traversal
 
 3.2 Advanced Security Features
+
 SQL keyword frequency and ratio
 XSS pattern detection
 Command injection indicators
@@ -45,13 +47,14 @@ Base64-like patterns
 Mixed-case obfuscation
 
 3.3 Header Anomaly Features
+
 Missing User-Agent or Referer
 Suspicious scanning tools (e.g., sqlmap, nikto)
 Abnormally long tokens
 Excessive query parameters
 Unusual HTTP methods (PUT, DELETE, TRACE, CONNECT)
 
-5. Data Preprocessing
+4. Data Preprocessing
 
 The preprocessing pipeline includes:
 
@@ -126,6 +129,7 @@ transfer-encoding
 connection
 
 9. Running the Application
+
 Requirements
 Python 3.x
 Required libraries:
@@ -157,6 +161,7 @@ README.md
 requirements.txt
 
 11. Advantages
+
 Real-time detection using machine learning
 No dependency on signature-based rules
 Privacy-preserving (no payload decryption required)
